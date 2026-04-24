@@ -221,7 +221,8 @@ html {
 }
 
 .about-content {
-  max-width: 6000px;
+  max-width: 1080px;
+  width: 100%;
 }
 
 .about-content h2 {
@@ -661,4 +662,102 @@ button {
 .footer-copy {
   font-size: 12px;
   color: #64748b;
+}
+/* ================= RESPONSIVE FIX ================= */
+
+/* Medium screens (laptops) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .hero {
+    padding: 0 30px;
+  }
+
+  .hero-left h1 {
+    font-size: 45px;
+  }
+
+  .section {
+    padding: 60px;
+    margin: 20px;
+  }
+}
+
+/* Small screens (tablets & small laptops) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-left h1 {
+    font-size: 35px;
+  }
+
+  .hero-left span {
+    font-size: 20px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+}
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-left span {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 30px 15px;
+    margin: 10px;
+  }
+
+  .image-box img {
+    width: 220px;
+  }
+
+  .skills-timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-timeline::before {
+    display: none;
+  }
+
+  .skill-item::after {
+    display: none;
+  }
+
+  .project-card {
+    width: 100%;
+  }
 }
