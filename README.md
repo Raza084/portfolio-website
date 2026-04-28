@@ -6,7 +6,7 @@ A modern and responsive personal portfolio website showcasing my projects, skill
 
 ## 🚀 Live Demo
 
-👉 https://your-site-name.netlify.app
+👉 https://raza-info.netlify.app
 
 ---
 
